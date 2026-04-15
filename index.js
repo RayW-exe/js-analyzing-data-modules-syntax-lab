@@ -7,7 +7,7 @@ function combineUsers (...args){
   args.forEach(subArr =>{
     combinedObject.users.push(...subArr)
   });
-  combinedObject.merge_date = datejs.format(M/d/yyyy)
+  combinedObject.merge_date = Date.today().toString('M/d/yyyy');
   
   return combinedObject
 }
